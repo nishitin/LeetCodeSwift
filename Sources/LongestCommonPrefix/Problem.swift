@@ -6,9 +6,7 @@ class LongestCommonPrefixSolution {
         var prefix = strs[0]
         
         for str in strs {
-            // print(str)
             while !str.hasPrefix(prefix) {
-                print(str)
                 prefix.removeLast()
                 if prefix.isEmpty { return "" }
             }
